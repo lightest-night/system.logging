@@ -1,3 +1,4 @@
+using System;
 using Microsoft.Extensions.Logging;
 
 namespace LightestNight.System.Logging
@@ -43,6 +44,11 @@ namespace LightestNight.System.Logging
         /// When this occurred, as a unix timestamp.
         /// </summary>
         public long Timestamp { get; set; }
+
+        /// <summary>
+        /// When this occurred, as a UTC date
+        /// </summary>
+        public DateTime Datestamp => DateTimeOffset.FromUnixTimeSeconds(Timestamp).UtcDateTime;
         
         /// <summary>
         /// Any Request Identifier to include with this Log
