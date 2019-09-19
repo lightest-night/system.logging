@@ -1,4 +1,6 @@
+using System.Threading.Tasks;
+
 namespace LightestNight.System.Logging
 {
-    public delegate void Logger(LogData logData);
+    public delegate Task Logger(LogData logData);
 }
