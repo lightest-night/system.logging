@@ -64,5 +64,10 @@ namespace LightestNight.System.Logging
         /// The Environment this Log occurred within
         /// </summary>
         public string Environment { get; set; }
+        
+        /// <summary>
+        /// Any Exception being logged
+        /// </summary>
+        public Exception Exception { get; set; }
     }
 }
