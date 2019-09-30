@@ -68,6 +68,6 @@ namespace LightestNight.System.Logging
         /// <summary>
         /// Any Exception being logged
         /// </summary>
-        public Exception Exception { get; set; }
+        public object Exception { get; set; }
     }
 }
