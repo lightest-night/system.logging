@@ -1,4 +1,5 @@
 using System;
+using LightestNight.System.Utilities;
 using Microsoft.Extensions.Logging;
 
 namespace LightestNight.System.Logging
@@ -68,6 +69,6 @@ namespace LightestNight.System.Logging
         /// <summary>
         /// Any Exception being logged
         /// </summary>
-        public object Exception { get; set; }
+        public LightestNightException Exception { get; set; }
     }
 }
